@@ -1,0 +1,78 @@
+﻿body
+{
+	font-family: Arial, 'Century Schoolbook' , Sans-Serif;
+}
+
+table
+{
+	margin: 0;
+	border: none;
+	padding: 1px;
+	width: 100%;	
+}
+
+.alternateRow
+{
+	background-color: #f1f1f1;
+}
+
+.titleRowCell
+{
+	background-color: #DDDDDD;
+	width: 15%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.titleRowVerse
+{
+	background-color: #DDDDDD;
+	width: 75%;
+	font-weight: bold;
+}
+
+td.dayCell
+{
+	width: 15%;
+	text-align: center;
+	vertical-align: top;
+}
+
+td.verseCell
+{
+	width: 75%;
+}
+
+a:link
+{
+	color: #000000;
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration:underline;
+}
+
+a:visited
+{
+	color: #d20238;
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration: none;
+
+}
+
+a:hover
+{
+	color: #3333cc;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+a:active
+{
+	color: #006600;
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration: none;
+}

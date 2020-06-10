@@ -1,0 +1,716 @@
+<H1>Database Systems: Design, Implementation, & Management Summary by Carlos Coronel</h1>
+<p dir="ltr">
+    Chapter 1 - Database Systems - Summary
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Data consists of raw facts. Information is the result of processing
+            data to reveal its meaning. Accurate, relevant, and timely
+            information is the key to good decision making, and good decision
+            making is the key to organizational survival in a global
+            environment.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Data is usually stored in a database. To implement a database and
+            to manage its contents, you need a database management system
+            (DBMS). The DBMS serves as the intermediary between the user and
+            the database. The database contains the data you have collected and
+            “data about data,” known as metadata.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Database design defines the database structure. A well-designed
+            database facilitates data management and generates accurate and
+            valuable information. A poorly designed database can lead to poor
+            decision making, and poor decision making can lead to the failure
+            of an organization.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Databases can be classified according to the number of users
+            supported, where the data is located, the type of data stored, the
+            intended data usage, and the degree to which the data is
+            structured.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Databases evolved from manual and then computerized file systems.
+            In a file system, data is stored in independent files, each
+            requiring its own data management programs. Although this method of
+            data management is largely outmoded, understanding its
+            characteristics makes database design easier to comprehend. Some
+            limitations of file system data management are that it requires
+            extensive programming, system administration can be complex and
+            difficult, making changes to existing structures is difficult, and
+            security features are likely to be inadequate. Also, independent
+            files tend to contain redundant data, leading to problems of
+            structural and data dependence. Database management systems were
+            developed to address the file system’s inherent weaknesses. Rather
+            than depositing data in independent files, a DBMS presents the
+            database to the end user as a single data repository. This
+            arrangement promotes data sharing, thus eliminating the potential
+            problem of islands of information. In addition, the DBMS enforces
+            data integrity, eliminates redundancy, and promotes data security.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Knowledge of database technologies leads to many career
+            opportunities in the ever-expanding IT industry. There is a variety
+            of specialization within the database arena for a wide range of
+            skills and expertise.
+        </p>
+    </li>
+</ul>
+<p dir="ltr">
+    Chapter 2 – Data Models - Summary
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            A data model is an abstraction of a complex real-world data
+            environment. Database designers use data models to communicate with
+            programmers and end users. The basic data-modeling components are
+            entities, attributes, relationships, and constraints. Business
+            rules are used to identify and define the basic modeling components
+            within a specific real-world environment.
+        </p>
+    </li>
+</ul>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            The hierarchical and network data models were early models that are
+            no longer used, but some of the concepts are found in current data
+            models.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The relational model is the current database implementation
+            standard. In the relational model, the end user perceives the data
+            as being stored in tables. Tables are related to each other by
+            means of common values in common attributes. The entity
+            relationship (ER) model is a popular graphical tool for data
+            modeling that complements the relational model. The ER model allows
+            database designers to visually present different views of the
+            data—as seen by database designers, programmers, and end users—and
+            to integrate the data into a common framework.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The object-oriented data model (OODM) uses objects as the basic
+            modeling structure. Like the relational model’s entity, an object
+            is described by its factual content. Unlike an entity, however, the
+            object also includes information about relationships between the
+            facts, as well as relationships with other objects, thus giving its
+            data more meaning.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The relational model has adopted many object-oriented (OO)
+            extensions to become the extended relational data model (ERDM).
+            Object/relational database management systems (O/R DBMS) were
+            developed to implement the ERDM. At this point, the OODM is largely
+            used in specialized engineering and scientific applications, while
+            the ERDM is primarily geared to business applications.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Emerging Big Data technologies such as Hadoop, MapReduce, and NoSQL
+            provide distributed, fault-tolerant, and cost-efficient support for
+            Big Data analytics. NoSQL databases are a new generation of
+            databases that do not use the relational model and are geared to
+            support the very specific needs of Big Data organizations. NoSQL
+            databases offer distributed data stores that provide high
+            scalability, availability, and fault tolerance by sacrificing data
+            consistency and shifting the burden of maintaining relationships
+            and data integrity to the program code.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Data-modeling requirements are a function of different data views
+            (global versus local) and the level of data abstraction. The
+            American National Standards Institute Standards Planning and
+            Requirements Committee (ANSI/SPARC) describes three levels of data
+            abstraction: external, conceptual, and internal. The fourth and
+            lowest level of data abstraction, called the physical level, is
+            concerned exclusively with physical storage methods.
+        </p>
+    </li>
+</ul>
+<p dir="ltr">
+    Chapter 3 – The Relational Database Model – Summary
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Tables are the basic building blocks of a relational database. A
+            grouping of related entities, known as an entity set, is stored in
+            a table. Conceptually speaking, the relational table is composed of
+            intersecting rows (tuples) and columns. Each row represents a
+            single entity, and each column represents the characteristics
+            (attributes) of the entities.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Keys are central to the use of relational tables. Keys define
+            functional dependencies; that is, other attributes are dependent on
+            the key and can therefore be found if the key value is known. A key
+            can be classified as a superkey, a candidate key, a primary key, a
+            secondary key, or a foreign key.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Each table row must have a primary key. The primary key is an
+            attribute or combination of attributes that uniquely identifies all
+            remaining attributes found in any given row. Because a primary key
+            must be unique, no null values are allowed if entity integrity is
+            to be maintained.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Although tables are independent, they can be linked by common
+            attributes. Thus, the primary key of one table can appear as the
+            foreign key in another table to which it is linked. Referential
+            integrity dictates that the foreign key must contain values that
+            match the primary key in the related table, or must contain nulls.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The relational model supports several relational algebra functions,
+            including SELECT, PROJECT, JOIN, INTERSECT, UNION, DIFFERENCE,
+            PRODUCT, and DIVIDE. Understanding the basic mathematical forms of
+            these functions gives a broader understanding of the data
+            manipulation options.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A relational database performs much of the data manipulation work
+            behind the scenes. For example, when you create a database, the
+            RDBMS automatically produces a structure to house a data dictionary
+            for your database. Each time you create a new table within the
+            database, the RDBMS updates the data dictionary, thereby providing
+            the database documentation.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Once you know the basics of relational databases, you can
+            concentrate on design. Good design begins by identifying
+            appropriate entities and their attributes and then the
+            relationships among the entities. Those relationships (1:1, 1:M,
+            and M:N) can be represented using ERDs. The use of ERDs allows you
+            to create and evaluate simple logical design. The 1:M relationship
+            is most easily incorporated in a good design; just make sure that
+            the primary key of the “1” is included in the table of the “many.”
+        </p>
+    </li>
+</ul>
+<p dir="ltr">
+    Chapter 4 – Entity Relationship (ER) Modeling – Summary
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            The ERM uses ERDs to represent the conceptual database as viewed by
+            the end user. The ERM’s main components are entities,
+            relationships, and attributes. The ERD includes connectivity and
+            cardinality notations, and can also show relationship strength,
+            relationship participation (optional or mandatory), and degree of
+            relationship (such as unary, binary, or ternary).
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Connectivity describes the relationship classification (1:1, 1:M,
+            or M:N). Cardinality expresses the specific number of entity
+            occurrences associated with an occurrence of a related entity.
+            Connectivities and cardinalities are usually based on business
+            rules.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            In the ERM, an M:N relationship is valid at the conceptual level.
+            However, when implementing the ERM in a relational database, the
+            M:N relationship must be mapped to a set of 1:M relationships
+            through a composite entity.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            ERDs may be based on many different ERMs. However, regardless of
+            which model is selected, the modeling logic remains the same.
+            Because no ERM can accurately portray all real-world data and
+            action constraints, application software must be used to augment
+            the implementation of at least some of the business rules.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Unified Modeling Language (UML) class diagrams are used to
+            represent the static data structures in a data model. The symbols
+            used in the UML class and ER diagrams are very similar. The UML
+            class diagrams can be used to depict data models at the conceptual
+            or implementation abstraction levels.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Database designers, no matter how well they can produce designs
+            that conform to all applicable modeling conventions, are often
+            forced to make design compromises. Those compromises are required
+            when end users have vital transaction-speed and information
+            requirements that prevent the use of “perfect” modeling logic and
+            adherence to all modeling conventions. Therefore, database
+            designers must use their professional judgment to determine how and
+            to what extent the modeling conventions are subject to
+            modification. To ensure that their professional judgments are
+            sound, database designers must have detailed and in-depth knowledge
+            of data-modeling conventions. It is also important to document the
+            design process from beginning to end, which helps keep the design
+            process on track and allows for easy modifications in the future.
+        </p>
+    </li>
+</ul>
+<p dir="ltr">
+    Chapter 5 – Advanced Data Modeling – Summary
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            The extended entity relationship (EER) model adds semantics to the
+            ER model via entity supertypes, subtypes, and clusters. An entity
+            supertype is a generic entity type that is related to one or more
+            entity subtypes.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A specialization hierarchy depicts the arrangement and
+            relationships between entity supertypes and entity subtypes.
+            Inheritance means that an entity subtype inherits the attributes
+            and relationships of the supertype. Subtypes can be disjoint or
+            overlapping. A subtype discriminator is used to determine to which
+            entity subtype the supertype occurrence is related. The subtypes
+            can exhibit partial or total completeness. There are basically two
+            approaches to developing a specialization hierarchy of entity
+            supertypes and subtypes: specialization and generalization.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            An entity cluster is a “virtual” entity type used to represent
+            multiple entities and relationships in the ERD. An entity cluster
+            is formed by combining multiple interrelated entities and
+            relationships into a single, abstract entity object.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Natural keys are identifiers that exist in the real world. Natural
+            keys sometimes make good primary keys, but not always. Primary keys
+            must have unique values, they should be non-intelligent, they must
+            not change over time, and they are preferably numeric and composed
+            of a single attribute.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Composite keys are useful to represent M:N relationships and weak
+            (strong identifying) entities.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Surrogate primary keys are useful when there is no natural key that
+            makes a suitable primary key, when the primary key is a composite
+            primary key with multiple data types, or when the primary key is
+            too long to be usable.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            In a 1:1 relationship, place the PK of the mandatory entity as a
+            foreign key in the optional entity, as an FK in the entity that
+            causes the fewest nulls, or as an FK where the role is played.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Time-variant data refers to data whose values change over time and
+            require that you keep a history of data changes. To maintain the
+            history of time-variant data, you must create an entity that
+            contains the new value, the date of change, and any other
+            time-relevant data. This entity maintains a 1:M relationship with
+            the entity for which the history is to be maintained.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A fan trap occurs when you have one entity in two 1:M relationships
+            to other entities, and there is an association among the other
+            entities that is not expressed in the model. Redundant
+            relationships occur when there are multiple relationship paths
+            between related entities. The main concern with redundant
+            relationships is that they remain consistent across the mode.
+        </p>
+    </li>
+</ul>
+<p dir="ltr">
+    Chapter 6 – Normalization of Database Tables – Summary
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Normalization is a technique used to design tables in which data
+            redundancies are minimized. The first three normal forms (1NF, 2NF,
+            and 3NF) are the most com-mon. From a structural point of view,
+            higher normal forms are better than lower normal forms because
+            higher normal forms yield relatively fewer data redundancies in the
+            database. Almost all business designs use 3NF as the ideal normal
+            form. A special, more restricted 3NF known as Boyce-Codd normal
+            form, or BCNF, is also used.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A table is in 1NF when all key attributes are defined and all
+            remaining attributes are dependent on the primary key. However, a
+            table in 1NF can still contain both partial and transitive
+            dependencies. A partial dependency is one in which an attribute is
+            functionally dependent on only a part of a multi-attribute primary
+            key. A transitive dependency is one in which an attribute is
+            functionally dependent on another non-key attribute. A table with a
+            single-attribute primary key cannot exhibit partial dependencies.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A table is in 2NF when it is in 1NF and contains no partial
+            dependencies. Therefore, a 1NF table is automatically in 2NF when
+            its primary key is based on only a single attribute. A table in 2NF
+            may still contain transitive dependencies.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A table is in 3NF when it is in 2NF and contains no transitive
+            dependencies. Given that definition, the Boyce-Codd normal form
+            (BCNF) is merely a special 3NF case in which all determinant keys
+            are candidate keys. When a table has only a single candidate key, a
+            3NF table is automatically in BCNF.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A table that is not in 3NF may be split into new tables until all
+            of the tables meet the 3NF requirements.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Normalization is an important part—but only a part—of the design
+            process. As entities and attributes are defined during the ER
+            modeling process, subject each entity (set) to normalization checks
+            and form new entities (sets) as required. Incorporate the
+            normalized entities into the ERD and continue the iterative ER
+            process until all entities and their attributes are defined and all
+            equivalent tables are in 3NF.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A table in 3NF might contain multivalued dependencies that produce
+            either numerous null values or redundant data. Therefore, it might
+            be necessary to convert a 3NF table to the fourth normal form (4NF)
+            by splitting the table to remove the multivalued dependencies.
+            Thus, a table is in 4NF when it is in 3NF and contains no
+            multivalued dependencies.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The larger the number of tables, the more additional I/O operations
+            and processing logic you need to join them. Therefore, tables are
+            sometimes denormalized to yield less I/O in order to increase
+            processing speed. Unfortunately, with larger tables, you pay for
+            the increased processing speed by making the data updates less
+            efficient, by making indexing more cumbersome, and by introducing
+            data redundancies that are likely to yield data anomalies. In the
+            design of production databases, use denormalization sparingly and
+            cautiously.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The data-modeling checklist provides a way for the designer to
+            check that the ERD meets a set of minimum requirements.
+        </p>
+    </li>
+</ul>
+<p dir="ltr">
+    Chapter 7 – Introduction to Structured Query Language (SQL)
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            SQL commands can be divided into two overall categories: data
+            definition language (DDL) commands and data manipulation language
+            (DML) commands.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The ANSI standard data types are supported by all RDBMS vendors in
+            different ways. The basic data types are NUMBER, NUMERIC, INTEGER,
+            CHAR, VARCHAR, and DATE.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The basic data definition commands allow you to create tables and
+            indexes. Many SQL constraints can be used with columns. The
+            commands are CREATE TABLE, CREATE INDEX, ALTER TABLE, DROP TABLE,
+            and DROP INDEX.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            DML commands allow you to add, modify, and delete rows from tables.
+            The basic DML commands are SELECT, INSERT, UPDATE, DELETE, COMMIT,
+            and ROLLBACK.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The INSERT command is used to add new rows to tables. The UPDATE
+            command is used to modify data values in existing rows of a table.
+            The DELETE command is used to delete rows from tables. The COMMIT
+            and ROLLBACK commands are used to permanently save or roll back
+            changes made to the rows. Once you COMMIT the changes, you cannot
+            undo them with a ROLLBACK command.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The SELECT statement is the main data retrieval command in SQL. A
+            SELECT statement has the following syntax: SELECT FROM [WHERE
+            [GROUP BY [HAVING [ORDER BY columnlist tablelist conditionlist ]
+            columnlist ] conditionlist ] columnlist [ASC | DESC] ];
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The column list represents one or more column names separated by
+            commas. The column list may also include computed columns, aliases,
+            and aggregate functions. A computed column is represented by an
+            expression or formula (for example, P_PRICE * P_QOH). The FROM
+            clause contains a list of table names.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The WHERE clause can be used with the SELECT, UPDATE, and DELETE
+            statements to restrict the rows affected by the DDL command. The
+            condition list represents one or more conditional expressions
+            separated by logical operators (AND, OR, and NOT). The conditional
+            expression can contain any comparison operators (=, &gt;, &lt;,
+            &gt;=, &lt;=, and &lt;&gt;) as well as special operators (BETWEEN,
+            IS NULL, LIKE, IN, and EXISTS).
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Aggregate functions (COUNT, MIN, MAX, and AVG) are special
+            functions that perform arithmetic computations over a set of rows.
+            The aggregate functions are usually used in conjunction with the
+            GROUP BY clause to group the output of aggregate computations by
+            one or more attributes. The HAVING clause is used to restrict the
+            output of the GROUP BY clause by selecting only the aggregate rows
+            that match a given condition.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The ORDER BY clause is used to sort the output of a SELECT
+            statement. The ORDER BY clause can sort by one or more columns and
+            can use either ascending or descending order.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            You can join the output of multiple tables with the SELECT
+            statement. The join operation is performed every time you specify
+            two or more tables in the FROM clause and use a join condition in
+            the WHERE clause to match the foreign key of one table to the
+            primary key of the related table. If you do not specify a join
+            condition, the DBMS will automatically perform a Cartesian product
+            of the tables you specify in the FROM clause.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            The natural join uses the join condition to match only rows with
+            equal values in the specified columns.
+        </p>
+    </li>
+</ul>
+<p dir="ltr">
+    Chapter 8 – Advanced SQL – Summary
+</p>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Operations that join tables can be classified as inner joins and
+            outer joins. An inner join is the traditional join in which only
+            rows that meet a given criterion are selected. An outer join
+            returns the matching rows as well as the rows with unmatched
+            attribute values for one table or both tables to be joined.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A natural join returns all rows with matching values in the
+            matching columns and eliminates duplicate columns. This style of
+            query is used when the tables share a common attribute with a
+            common name. One important difference between the syntax for a
+            natural join and for the old-style join is that the natural join
+            does not require the use of a table qualifier for the common
+            attributes. In practice, natural joins are often discouraged
+            because the common attribute is not specified within the command,
+            making queries more difficult to understand and maintain.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Joins may use keywords such as USING and ON. If the USING clause is
+            used, the query will return only the rows with matching values in
+            the column indicated in the USING clause; that column must exist in
+            both tables. If the ON clause is used, the query will return only
+            the rows that meet the specified join condition.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Subqueries and correlated queries are used when it is necessary to
+            process data based on other processed data. That is, the query uses
+            results that were previously unknown and that are generated by
+            another query. Subqueries may be used with the FROM, WHERE, IN, and
+            HAVING clauses in a SELECT statement. A subquery may return a
+            single row or multiple rows.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Most subqueries are executed in a serial fashion. That is, the
+            outer query initiates the data request, and then the inner subquery
+            is executed. In contrast, a correlated subquery is a subquery that
+            is executed once for each row in the outer query. That process is
+            similar to the typical nested loop in a programming language. A
+            correlated subquery is so named because the inner query is related
+            to the outer query—the inner query references a column of the outer
+            subquery.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            SQL functions are used to extract or transform data. The most
+            frequently used functions are date and time functions. The results
+            of the function output can be used to store values in a database
+            table, to serve as the basis for the computation of derived
+            variables, or to serve as a basis for data comparisons. Function
+            formats can be vendor-specific. Aside from time and date functions,
+            there are numeric and string functions as well as conversion
+            functions that convert one data format to another.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            SQL provides relational set operators to combine the output of two
+            queries to generate a new relation. The UNION and UNION ALL set
+            operators combine the output of two or more queries and produce a
+            new relation with all unique (UNION) or duplicate (UNION ALL) rows
+            from both queries. The INTERSECT relational set operator selects
+            only the common rows. The EXCEPT (MINUS) set operator selects only
+            the rows that are different. UNION, INTERSECT, and EXCEPT require
+            union-compatible relations.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            In Oracle and SQL Server, sequences may be used to generate values
+            to be assigned to a record. For example, a sequence may be used to
+            number invoices automatically. MS Access uses an AutoNumber data
+            type to generate numeric sequences, and MySQL uses the
+            AUTO_INCREMENT property during table creation. Oracle and SQL
+            Server can use the Identity column property to designate the column
+            that will have sequential numeric values automatically assigned to
+            it. There can only be one Identity column per table.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Procedural Language SQL (PL/SQL) can be used to create triggers,
+            stored procedures, and PL/SQL functions. A trigger is procedural
+            SQL code that is automatically invoked by the DBMS upon the
+            occurrence of a specified data manipulation event (UPDATE, INSERT,
+            or DELETE). Triggers are critical to proper database operation and
+            management. They help automate various transaction and data
+            management processes, and they can be used to enforce constraints
+            that are not enforced at the DBMS design and implementation levels.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            A stored procedure is a named collection of SQL statements. Just
+            like database triggers, stored procedures are stored in the
+            database. One of the major advantages of stored procedures is that
+            they can be used to encapsulate and represent complete business
+            transactions. Use of stored procedures substantially reduces
+            network traffic and increases system performance. Stored procedures
+            also help reduce code duplication by creating unique PL/SQL modules
+            that are called by the application programs, thereby minimizing the
+            chance of errors and the cost of application development and
+            maintenance.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            When SQL statements are designed to return more than one value
+            inside the PL/SQL code, a cursor is needed. You can think of a
+            cursor as a reserved area of memory in which the output of the
+            query is stored, like an array holding columns and rows. Cursors
+            are held in a reserved memory area in the DBMS server, rather than
+            in the client computer. There are two types of cursors: implicit
+            and explicit.
+        </p>
+    </li>
+    <li dir="ltr">
+        <p dir="ltr">
+            Embedded SQL refers to the use of SQL statements within an
+            application programming language such as Visual Basic .NET, C#,
+            COBOL, or Java. The language in which the SQL statements are
+            embedded is called the host language. Embedded SQL is still the
+            most common approach to maintaining procedural capabilities in
+            DBMS-based applications.
+        </p>
+    </li>
+</ul>
+<br/>

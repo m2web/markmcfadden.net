@@ -1,0 +1,79 @@
+body
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+}
+A:link
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+	font-style:normal;
+	color:Black;
+	font-size:small;
+}
+
+A:hover
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+	font-style:normal;
+	color:Black;
+	/*font-weight:bold;*/
+	font-size:small;
+	text-decoration:none;
+}
+
+A:active
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+	font-style:normal;
+	color:Black;
+	font-size:small;
+}
+
+A:visited
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+	font-style:normal;
+	color:Navy;
+	font-size:small;
+}
+
+.LabelHeader
+{
+	font-family:Forte,:Arial,Sans-Serif;
+	font-size:xx-large;
+	color:Navy;
+}
+
+.MemoryVerses
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+	font-style:normal;
+	color:Black;
+	font-size:smaller;
+}
+
+.MemoryVersesTitleLabel
+{
+	font-family:Forte,:Arial,Sans-Serif;
+	color:Black;
+	font-size:large;
+}
+
+HR
+{
+	width: 80%;
+	color: Black;
+}
+
+.DailyRequestsText
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+	font-size:16;	
+}
+
+.DailyCategoriesText
+{
+	font-family:Arial,Sans-Serif,Times New Roman;
+	font-size:16;
+	font-weight: bold;	
+}
+

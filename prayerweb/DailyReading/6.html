@@ -1,0 +1,215 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>June Thru the Bible</title>
+    <link href="css/dailyReading.css" rel="stylesheet" type="text/css">
+    <!-- Month Drop Down Menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/MyBootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="getVerse();">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. They're free!</p>
+<![endif]-->
+<!-- Memory Verse -->
+<span id="verseTable"></span>
+<!-- End Memory Verse -->
+<!-- Month Drop Down Menu -->
+<br />
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle black-background white" type="button" data-toggle="dropdown">
+        Select Month
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="1.html">January</a></li>
+        <li><a href="2.html">February</a></li>
+        <li><a href="3.html">March</a></li>
+        <li><a href="4.html">April</a></li>
+        <li><a href="5.html">May</a></li>
+        <li><a href="6.html">June</a></li>
+        <li><a href="7.html">July</a></li>
+        <li><a href="8.html">August</a></li>
+        <li><a href="9.html">September</a></li>
+        <li><a href="10.html">October</a></li>
+        <li><a href="11.html">November</a></li>
+        <li><a href="12.html">December</a></li>
+    </ul>
+</div>
+<br />
+<!-- End Month Drop Down Menu -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td width="15%" bgcolor="#dddddd" align="center"><b>&nbsp;June&nbsp;</b></td>
+            <td width="75%" bgcolor="#dddddd"><b>&nbsp;Passage&nbsp;</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >1</td>
+            <td  width="75%"><a href="#" onclick="remoteStartBible('Psalm+119:89-176')">Psalm 119:89-176</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >2</td>
+            <td  width="75%"><a href="#" onclick="remoteStartBible('Song+of+Solomon+1-8')">Song of Solomon</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >3</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+1;Proverbs+2;Proverbs+3;')">Proverbs 1-3</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >4</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+4;Proverbs+5;Proverbs+6;')">Proverbs 4-6</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >5</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+7;Proverbs+8;Proverbs+9;')">Proverbs 7-9</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >6</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+10;Proverbs+11;Proverbs+12;')">Proverbs 10-12</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >7</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+13;Proverbs+14;Proverbs+15;')">Proverbs 13-15</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >8</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+16;Proverbs+17;Proverbs+18;')">Proverbs 16-18</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >9</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+19;Proverbs+20;Proverbs+21;')">Proverbs 19-21</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >10</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+22;Proverbs+23;Proverbs+24;')">Proverbs 22-24</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >11</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+5-6;2+Chronicles+2-3')">1 Kings 5-6; 2 Chronicles 2-3</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >12</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+7;2+Chronicles+4')">1 Kings 7; 2 Chronicles 4</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >13</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+8;2+Chronicles+5')">1 Kings 8; 2 Chronicles 5</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >14</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('2+Chronicles+6-7;Psalm+136')">2 Chronicles 6-7; Psalm 136</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >15</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Psalm+134;Psalm+146-150')">Psalm 134; Psalm 146-150</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >16</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+9;2+Chronicles+8')">1 Kings 9; 2 Chronicles 8</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >17</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+25;Proverbs+26;')">Proverbs 25-26</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >18</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+27;Proverbs+28;Proverbs+29;')">Proverbs 27-29</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >19</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Ecclesiastes+1;Ecclesiastes+2;Ecclesiastes+3;Ecclesiastes+4;Ecclesiastes+5;Ecclesiastes+6;')">Ecclesiastes 1-6</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >20</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Ecclesiastes+7;Ecclesiastes+8;Ecclesiastes+9;Ecclesiastes+10;Ecclesiastes+11;Ecclesiastes+12;')">Ecclesiastes 7-12</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >21</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+10-11;2+Chronicles+9')">1 Kings 10-11; 2 Chronicles 9</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >22</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('Proverbs+30;Proverbs+31;')">Proverbs 30-31</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >23</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+12;1+Kings+13;1+Kings+14;')">1 Kings 12-14</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >24</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('2+Chronicles+10;2+Chronicles+11;2+Chronicles+12;')">2 Chronicles 10-12</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >25</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+15:1-24;2+Chronicles+13-16')">1 Kings 15:1-24; 2 Chronicles 13-16</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >26</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+15:25-16:34;2+Chronicles+17')">1 Kings 15:25-16:34; 2 Chronicles 17</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >27</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+17;1+Kings+18;1+Kings+19;')">1 Kings 17-19</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >28</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+20;1+Kings+21;')">1 Kings 20-21</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >29</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('1+Kings+22;2+Chronicles+18')">1 Kings 22; 2 Chronicles 18</a>     </td>
+        </tr>
+        <tr>
+
+            <td align="center" width="15%" valign="top" >30</td>
+            <td  width="75%"><a href="#" onclick="javascript:remoteStartBible('2+Chronicles+19;2+Chronicles+20;2+Chronicles+21;2+Chronicles+22;2+Chronicles+23;')">2 Chronicles 19-23</a>     </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="#dddddd" align="center">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<script src="js/main.js"></script>
+</body>
+</html>

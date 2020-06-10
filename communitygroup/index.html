@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>McFadden's Community Group</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/McFaddenCommunityGroup.png");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Meets from 1 to 3pm on Sunday</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">90 Alexandria Pike, Fort Thomas KY 41075</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-light-blue w3-grayscale-min w3-xlarge" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-xlarge">ABOUT THE Community GROUP</span></h5>
+    <div class="w3-tag">Where are we meeting?</div>
+    <p>We are meeting at the Grace Fellowship Ft. Thomas Campus: 90 Alexandria Pike, Fort Thomas KY 41075.</p>
+    <div class="w3-tag">When do we meet?</div>
+    <p>We meet on Sunday afternoons from 1 to 3 PM.</p>
+    <div class="w3-tag">What is up for 2019?</div>
+    <p>We will be discussing that morning's sermon. We may also be discussing different books at particular times.</p>
+    <div class="w3-tag">Who do I contact if I have any questions?</div>
+    <p>Please contact <a href="mailto:mark@m2.fyi">Mark</a>.</p> 
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-xlarge">WHERE TO FIND US</span></h5>
+    <p>Find us at the Grace Fellowship Ft. Thomas Campus: 90 Alexandria Pike, Fort Thomas KY 41075.</p>
+    <div id="googleMap" class="w3-light-blue" style="width:100%;height:400px;"></div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+ </footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(39.069833, -84.467564);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-light-blue", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-light-blue";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkMHk3Yh1AdoYUg9S61SJ5GDYzwY-epQw&callback=myMap"></script>
+
+</body>
+</html>

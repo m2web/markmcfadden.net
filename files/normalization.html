@@ -1,0 +1,85 @@
+<H1>Normalization Rules</h1>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            The objective of normalization is to ensure that each table conforms to the concept of well-formed relations—in other words, tables that have the following characteristics: 
+			Each table represents a single subject. For example, a COURSE table will contain only data that directly pertain to courses. Similarly, a STUDENT table will contain only student data. 
+			No data item will be unnecessarily stored in more than one table (in short, tables have minimum controlled redundancy). The reason for this requirement is to ensure that the data are updated in only one place. 
+			All nonprime attributes in a table are dependent on the primary key—the entire primary key and nothing but the primary key. The reason for this requirement is to ensure that the data are uniquely identifiable by a pri- mary key value. 
+			Each table is void of insertion, update, or deletion anomalies, which ensures the integrity and consistency of the data.
+
+			A partial dependency exists when there is a functional dependence in which the determinant is only part of the primary key (remember the assumption that there is only one candidate key). For example, if (A, B) -> (C, D), B -> C, and (A, B) is the primary key, then the functional dependence B -> C is a partial dependency because only part of the primary key (B) is needed to determine the value of C. Partial dependencies tend to be straightforward and easy to identify.
+
+			A transitive dependency exists when there are functional dependencies such that X -> Y, Y -> Z, and X is the primary key. throughout the discussion of the normalization process, the existence of a functional dependence among nonprime attributes will be considered a sign of a transitive dependency.
+        </p>
+    </li>
+</ul>	
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Normalization starts with a simple three-step procedure.
+			1. Eliminate repeating groups.
+			2. Identify the Primary Key
+			3. Identify All Dependencies.
+
+			The term first normal form (1st Normal Form) describes the tabular format in which:
+			-All of the key attributes are defined.
+			-There are no repeating groups in the table. In other words, each row/column intersection contains one and only one value, not a set of values. 
+			-All attributes are dependent on the primary key.
+        </p>
+    </li>
+</ul>	
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            Conversion to 2nd Normal Form occurs only when the 1st Normal Form has a composite primary key. If the 1st Normal Form has a single-attribute primary key, then the table is automatically in 2nd Normal Form. 
+			For a relation with composite primary key, the 1st Normal Form-to-2nd Normal Form conversion is simple. You take the following steps:
+			Step 1: Make New Tables to Eliminate Partial Dependencies
+			Step 2: Reassign Corresponding Dependent Attributes
+
+			A table is in second normal form (2nd Normal Form) when: 
+			It is in 1st Normal Form AND
+			It includes no partial dependencies; that is, no attribute is dependent on only a portion of the primary key. It is still possible for a table in 2nd Normal Form to exhibit transitive dependency; that is, the primary key may rely on one or more nonprime attributes to functionally determine other nonprime attributes, as indicated by a functional dependence among the nonprime attributes.
+
+			The data anomalies can be eliminated completing the following two steps: 
+			Step 1: Make New Tables to Eliminate Transitive Dependencies
+			Step 2: Reassign Corresponding Dependent Attributes
+        </p>
+    </li>
+</ul>	
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            A table is in third normal form (3rd Normal Form) when:
+			It is in 2nd Normal Form And
+			It contains no transitive dependencies.
+
+			If a table has multiple candidate keys (Candidate key is a minimal superkey—that is, a superkey [a key that can uniquely identify any row in the table] without any unnecessary attributes. Candidate keys are called candidates because they are the eligible options from which the designer will choose when selecting the primary key), then the overall process remains the same, but there are additional considerations. For example, if a table has multiple candidate keys and one of them is a composite key, the table can have partial dependencies based on this composite candidate key, even when the primary key chosen is a single attribute. In those cases, following the process described above, those dependencies would be perceived as transitive dependencies and would not be resolved until 3rd Normal Form.
+        </p>
+    </li>
+</ul>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            A table is in 3rd Normal Form when it is in 2nd Normal Form and there are no transitive dependencies, but what about a case in which a nonkey attribute is the determinant of a key attribute? That condition does not violate 3rd Normal Form, yet it fails to meet the BCNF requirements because BCNF requires that every determinant in the table be a candidate key. 
+			A + B -> C, D 
+			A + C -> B, D 
+			C -> B
+			Notice that this structure has two candidate keys: (A + B) and (A + C)(The condition C -> B indicates that a nonkey attribute determines part of the primary key — and that dependency is not transitive or partial because the dependent is a prime attribute!) Thus, the table structure in meets the 3rd Normal Form requirements, although the condition C -> B causes the table to fail to meet the BCNF requirements.
+
+			To convert the table structure in into table structures that are in 3rd Normal Form and in BCNF, first change the primary key to A + C. This change is appropriate because the dependency C -> B means that C is effectively a superset of B. At this point, the table is in 1st Normal Form because it contains a partial dependency, C -> B. Next, follow the standard decomposition procedures to move to higher normal forms to produce the results A + C -> D and C -> B.
+
+			Note that table is in BCNF when every determinant in that table is a candidate key. Therefore, when a table contains only one candidate key, 3rd Normal Form and BCNF are equivalent.
+        </p>
+    </li>
+</ul>
+<ul>
+    <li dir="ltr">
+        <p dir="ltr">
+            4th Normal Form
+			A table is in fourth normal form when it is in 3rd Normal Form and has no multivalued dependencies. A multivalued dependency, which occurs when one key determines multiple values of two other attributes and those attributes are independent of each other. (One employee can have many service entries and many assignment entries. 
+        </p>
+    </li>
+</ul>
+
+

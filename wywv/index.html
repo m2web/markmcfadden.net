@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+  <title>What's Your World View?</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+  <script src="app.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+  <div id="center">
+    <div id="header">
+    <div id="header-title">What is Your Worldview?</div>
+    <div id="header-subtitle"></div>
+    </div>
+    <br/>
+    <div ng-controller="WYWVCtrl" id="center">
+      <div ng-repeat="result in searchResult">
+        <a ng-href="{{result.y_outcome}}" target="_self"><div class="myButton">{{result.y_display}}</div></a>
+        <div id="questionInfo">{{result.display_text}}</div>
+        <a ng-href="{{result.n_outcome}}" target="_self"><div class="myButton">{{result.n_display}}</div></a>
+      </div>
+    </div>
+  <div id="footer">This site is based on the book <a id="bookTitle" ng-href="http://www.amazon.com/Whats-Your-Worldview-Interactive-Questions/dp/143353892X" target="_blank"><span id="bookTitle">What is Your Worldview?: An Interactive Approach to Life's Big Questions</span></a> by James N. Anderson</div>
+  </div>
+</div>
+</body>
+</html>

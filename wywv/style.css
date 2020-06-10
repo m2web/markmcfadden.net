@@ -1,0 +1,99 @@
+html,
+body {
+  border: 0;
+  margin-top: 5px;
+  height: 100%;
+  width: 100%;
+  font-family:arial;
+}
+
+#center {
+  width: 90%;
+  margin: auto;
+}
+
+#header,
+#footer {
+	clear: both;
+	text-align: center;
+	width: 80%;
+}
+
+#footer{
+  padding-top: 40px;
+}
+
+#header-title{
+	font-weight: bold;
+	font-size:220%;
+}
+
+#header-subtitle{
+	font-weight: bold;
+	font-size:125%;
+}
+
+#bookTitle{
+  font-style: italic;
+}
+
+/*Question/View/Next section*/
+#questionInfo {
+	margin: 5px 5px;
+	width: 50%;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	font-size:150%;
+}
+
+
+/*Button stuff*/
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a#bookTitle:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a#bookTitle:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.myButton {
+	background-color:#fff;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:2px solid #000000;
+	cursor:pointer;
+	color:#000;
+	font-size:15px;
+	padding:5px 0px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #2f6627;
+	margin-top: 75px;
+	float: left;
+	width: 15%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.myButton:hover {
+	background-color:gray;
+	color:#ffffff;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
