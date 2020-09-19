@@ -1,0 +1,59 @@
+body {
+	max-width: 60em;
+	padding: 2em;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*https://projects.verou.me/bubbly/*/
+.speech-bubble {
+	position: relative;
+	background: #0084bd;
+    border-radius: .4em;
+    color: white;
+    max-width: 10em;
+    text-align: center;
+    margin-bottom: 1.25em;
+    padding: .75em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #0084bd;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.bigfont{
+    font-size: 70px;
+}
+
+.smallfont{
+    font-size: 15px;
+}
+
+.superscript { 
+    position: relative; 
+    top: -1.0em; 
+    font-size: 50%;
+}
