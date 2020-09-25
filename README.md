@@ -1,6 +1,6 @@
 # Mark McFadden
 
-![](.//images/meGithub.PNG)
+![](https://m2web.herokuapp.com/images/meGithub.PNG)
 
 ## *I love technology*
 
@@ -23,10 +23,10 @@ to Database, as well as Information Technology Governance at a local
 university.
 
 ## Lately, I spend my time doing:
-![](.//images/latelyGithub.PNG)
+![](https://m2web.herokuapp.com/images/latelyGithub.PNG)
 
 ## Previously, in my career, my time was spent on:
-![](.//images/previouslyGithub.PNG)
+![](https://m2web.herokuapp.com/images/previouslyGithub.PNG)
 
 ## Contact Me
-![](.//images/contactGithub.PNG)
+![](https://m2web.herokuapp.com/images/contactGithub.PNG)
