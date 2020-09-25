@@ -1,6 +1,6 @@
 # Mark McFadden
 
-![](.//images/meGithub.png)
+![](.//images/meGithub.PNG)
 
 ## *I love technology*
 
@@ -23,10 +23,10 @@ to Database, as well as Information Technology Governance at a local
 university.
 
 ## Lately, I spend my time doing:
-![](.//images/latelyGithub.png)
+![](.//images/latelyGithub.PNG)
 
 ## Previously, in my career, my time was spent on:
-![](.//images/previouslyGithub.png)
+![](.//images/previouslyGithub.PNG)
 
 ## Contact Me
-![](.//images/contactGithub.png)
+![](.//images/contactGithub.PNG)
